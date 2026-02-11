@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Academy | The Ultimate Success</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="./images/logo.png" alt="Logo">
+            <div class="logo-text">
+                <h1>Vision Academy</h1>
+                <p>The Ultimate Success</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#faculty">Faculty</a></li>
+                <li><a href="#team">Team</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn-enquire">
+            <i class="fas fa-phone-alt"></i> Enquire Now
+        </a>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Transform<br>Your <span>Learning</span><br>Journey</h2>
+            <p>Join Vision Academy for excellence in education. Expert faculty, comprehensive courses, and a path to success for students from Class 1 to 12.</p>
+            <div class="hero-btns">
+                <a href="#" class="btn-orange">Enroll Now</a>
+                <a href="#" class="btn-outline">Explore Courses</a>
+            </div>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-box">
+                <h3>500+</h3>
+                <p>Students Enrolled</p>
+            </div>
+            <div class="stat-box">
+                <h3>50+</h3>
+                <p>Expert Courses</p>
+            </div>
+            <div class="stat-box wide">
+                <h3>98%</h3>
+                <p>Success Rate</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" id="about">
+        <div class="about-grid">
+            <img src="./images/class.png" alt="Classroom" class="about-img" onclick="openModal(this.src)" style="cursor: pointer;">
+            <div>
+                <span class="label">About Us</span>
+                <h2 class="title">About <span>Vision Academy</span></h2>
+                <p>Established in 2023, Vision Academy is a premier education and academic support institution dedicated to delivering accessible, structured, and outcome-oriented education across Odisha.</p>
+                <br>
+                <p>Headquartered in Bhubaneswar, we offer a <strong>hybrid learning model</strong> combining offline classroom coaching with online education.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background: #f1f5f9;">
+        <div style="text-align: center; margin-bottom: 50px;">
+            <h2 class="title">Our Mission & Vision</h2>
+            <p>Shaping students for a successful future</p>
+        </div>
+        <div class="courses-grid">
+            <div class="course-card" style="background: #2563eb; color: white;">
+                <h3>Our Mission</h3>
+                <p>To deliver high-quality, affordable education that builds strong academic foundations, confidence, and real-world skills for every student.</p>
+            </div>
+            <div class="course-card" style="background: #7c3aed; color: white;">
+                <h3>Our Vision</h3>
+                <p>To become a leading educational institution known for innovation, excellence, and nurturing future-ready students across the nation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faculty" class="section-padding" style="background: #f8fafc;">
+    <div style="text-align: center; margin-bottom: 60px;">
+        <span class="label">OUR EXPERTS</span>
+        <h2 class="title">Meet Our <span>Expert Faculty</span></h2>
+    </div>
+
+    <div class="faculty-grid">
+        <div class="profile-card">
+            <div class="profile-img-wrapper">
+                <img src="./images/pc-sir.png" alt="Rtn Dr. Prasanna Choudhury" onclick="openModal(this.src)" style="cursor: pointer;">
+            </div>
+            <div class="profile-body">
+                <h3>Rtn Dr. Prasanna Choudhury</h3>
+                <span class="role">Mathematics Expert</span>
+                <div class="credential-tag">
+                    <i class="fas fa-graduation-cap"></i> PH.D. IN MATHEMATICS
+                </div>
+                <p>Director of BENCHMARK CLASSES & PASE ACADEMY. Present President of Rotary Club of Bhubaneswar Capital.</p>
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <div class="profile-img-wrapper">
+                <img src="./images/sonalika-das.png" alt="Ms. Sonalika Das" onclick="openModal(this.src)" style="cursor: pointer;">
+            </div>
+            <div class="profile-body">
+                <h3>Ms. Sonalika Das</h3>
+                <span class="role">English Expert</span>
+                <div class="credential-tag">
+                    <i class="fas fa-graduation-cap"></i> PG IN ENGLISH
+                </div>
+                <p>Expert in academia, content writing, editing and publishing, journalism, public relations, and corporate communication.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="section-padding" id="programs">
+        <div style="text-align: center;">
+            <span class="label">Our Courses</span>
+            <h2 class="title">Transforming <span>Education</span></h2>
+        </div>
+        <div class="courses-grid">
+            <div class="course-card" data-course="summer" onclick="openCourseModal('summer')" style="cursor: pointer;">
+                <div class="course-icon" style="color: #ff6b00;"><i class="fas fa-sun"></i></div>
+                <h3>Summer Courses</h3>
+                <p>Boost your skills this summer. Focus on strengthening core concepts for Class 5 to 12.</p>
+                <button class="btn-details">View Details</button>
+            </div>
+            <div class="course-card" data-course="offline" onclick="openCourseModal('offline')" style="cursor: pointer;">
+                <div class="course-icon" style="color: #2563eb;"><i class="fas fa-users"></i></div>
+                <h3>Offline Classes</h3>
+                <p>Traditional learning excellence at our Bhubaneswar campus. Full Academic Year for Class 1 to 12.</p>
+                <button class="btn-details">View Details</button>
+            </div>
+            <div class="course-card" data-course="online" onclick="openCourseModal('online')" style="cursor: pointer;">
+                <div class="course-icon" style="color: #7c3aed;"><i class="fas fa-laptop"></i></div>
+                <h3>Online Classes</h3>
+                <p>Learn from anywhere, anytime. Live interactive sessions for Class 1 to 12 & Droppers.</p>
+                <button class="btn-details">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="courseModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body">
+                <!-- Content will be dynamically inserted -->
+            </div>
+        </div>
+    </div>
+
+    <section id="team" class="section-padding">
+    <div style="text-align: center; margin-bottom: 60px;">
+        <span class="label">LEADERSHIP</span>
+        <h2 class="title">Our Management <span>Team</span></h2>
+    </div>
+
+    <div class="team-grid">
+        <div class="team-card">
+            <div class="team-img-box">
+                <img src="./images/ceo.png" alt="Ms. Kajal Rath" onclick="openModal(this.src)" style="cursor: pointer;">
+            </div>
+            <div class="team-info">
+                <h3>Ms. Kajal Rath</h3>
+                <span class="designation">CHIEF EXECUTIVE OFFICER (CEO)</span>
+                <p>Under her leadership, Vision Academy focuses on building strong academic foundations, improving student performance, and delivering meaningful learning experiences.</p>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <div class="team-img-box">
+                <img src="./images/coo.jpg" alt="Ms. Madhu Lata Acharya" onclick="openModal(this.src)" style="cursor: pointer;">
+            </div>
+            <div class="team-info">
+                <h3>Ms. Madhu Lata Acharya</h3>
+                <span class="designation">CHIEF OPERATING OFFICER (COO)</span>
+                <p>She oversees day-to-day operations, academic scheduling, faculty coordination, student support systems, and residential program management.</p>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <div class="team-img-box">
+                <img src="./images/urmila.jpeg" alt="Prof. Urmila Swain" onclick="openModal(this.src)" style="cursor: pointer;">
+            </div>
+            <div class="team-info">
+                <h3>Prof. Urmila Swain</h3>
+                <span class="designation">CHIEF EDUCATION & RESEARCH OFFICER (CERO)</span>
+                <p>She leads the design and implementation of structured academic programs, promotes research-based learning practices, and mentors both students and faculty.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <form class="enquiry-form"
+      id="enquiry"
+      name="enquiry"
+      method="POST"
+      data-netlify="true">
+
+    <input type="hidden" name="form-name" value="enquiry">
+
+    <div class="form-grid">
+
+        <div class="input-group">
+            <input type="text" name="student_name" placeholder="Student Name *" required>
+        </div>
+
+        <div class="input-group">
+            <input type="text" name="parent_name" placeholder="Parent Name *" required>
+        </div>
+
+        <div class="input-group">
+            <input type="tel" name="mobile_number" placeholder="Mobile Number *" required>
+        </div>
+
+        <div class="input-group">
+            <input type="tel" name="alternate_mobile" placeholder="Alternate Mobile">
+        </div>
+
+        <div class="input-group">
+            <input type="email" name="email" placeholder="Email *" required>
+        </div>
+
+        <div class="input-group">
+            <select name="school_type" required>
+                <option value="" disabled selected>Select School Type</option>
+                <option value="OAV(Odisha Adarsha Vidyalaya)">OAV(Odisha Adarsha Vidyalaya)</option>
+                <option value="Jawahar Navodaya Vidyalaya">Jawahar Navodaya Vidyalaya</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <select name="current_standard" required>
+                <option value="" disabled selected>Current Standard</option>
+                <option value="STD 1">STD 1</option>
+                <option value="STD 2">STD 2</option>
+                <option value="STD 3">STD 3</option>
+                <option value="STD 4">STD 4</option>
+                <option value="STD 5">STD 5</option>
+                <option value="STD 6">STD 6</option>
+                <option value="STD 7">STD 7</option>
+                <option value="STD 8">STD 8</option>
+                <option value="STD 9">STD 9</option>
+                <option value="STD 10">STD 10</option>
+                <option value="STD 11">STD 11</option>
+                <option value="STD 12">STD 12</option>
+                <option value="Dropper">Dropper / Repeater</option>
+            </select>
+        </div>
+                <div class="input-group">
+            <select name="Current_Percentage" required>
+                <option value="" disabled selected>Current Percentage</option>
+                <option value="80-100%">80-100%</option>
+                <option value="40-80%">40-80%</option>
+                <option value="0-40%">0-40%</option>
+              
+            </select>
+        </div>
+
+    </div>
+
+    <button type="submit" class="btn-submit">
+        SUBMIT ENQUIRY <i class="fas fa-paper-plane"></i>
+    </button>
+
+</form>
+
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-logo">
+                <h2>Vision Academy</h2>
+                <p>Empowering students with quality education and expert guidance since 2023.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Programs</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Courses</h4>
+                <ul>
+                    <li>Class 1-10 Tuition</li>
+                    <li>+2 Science & Commerce</li>
+                    <li>Entrance Coaching</li>
+                    <li>Summer Camps</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Connect</h4>
+                <p><i class="fas fa-map-marker-alt"></i> BN Tower, Near Puri, Bhubaneswar</p>
+                <p><i class="fas fa-map-marker-alt"></i> Nuagaon, Kandhamal</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Vision Academy. All rights reserved.</p>
+            <div style="display: flex; gap: 20px;">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <span class="image-close">&times;</span>
+        <img class="image-modal-content" id="modalImage">
+    </div>
+
+    <!-- Course Modal -->
+    <div id="courseModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body">
+                <!-- Course details will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("imageModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var modalImg = document.getElementById("modalImage");
+        var captionText = document.getElementById("caption");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("image-close")[0];
+
+        // Function to open modal
+        function openModal(src) {
+            modal.style.display = "block";
+            modalImg.src = src;
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Course Modal
+        var courseModal = document.getElementById("courseModal");
+        var courseSpan = document.getElementsByClassName("close")[0];
+
+        function openCourseModal(course) {
+            var modalBody = document.getElementById("modal-body");
+            if (course === 'summer') {
+                modalBody.innerHTML = `
+                    <h2>Summer Courses</h2>
+                    <p>Boost your skills this summer with our intensive summer courses designed to strengthen core concepts for students from Class 5 to 12.</p>
+                    <h3>Key Features:</h3>
+                    <ul>
+                        <li>Focused on strengthening core concepts in Mathematics, Science, and English</li>
+                        <li>Small batch sizes for personalized attention</li>
+                        <li>Experienced faculty with proven track records</li>
+                        <li>Regular assessments and progress tracking</li>
+                        <li>Flexible timings to suit your schedule</li>
+                    </ul>
+                    <h3>Duration:</h3>
+                    <p>6-8 (March-April)weeks during summer vacation</p>
+                    <h3>Eligibility:</h3>
+                    <p>Students from Class 5 to 12</p>
+                    <button class="btn-enquire-modal" onclick="scrollToEnquiry()">Enquire Now</button>
+                `;
+            } else if (course === 'offline') {
+                modalBody.innerHTML = `
+                    <h2>Offline Classes</h2>
+                    <p>Experience traditional excellence in learning at our Bhubaneswar campus with full academic year offline classes for students from Class 1 to 12.</p>
+                    <h3>Key Features:</h3>
+                    <ul>
+                        <li>State-of-the-art classrooms with modern teaching aids</li>
+                        <li>Comprehensive curriculum covering all subjects</li>
+                        <li>Regular doubt-clearing sessions</li>
+                        <li>Parent-teacher meetings for progress updates</li>
+                        <li>Co-curricular activities and workshops</li>
+                    </ul>
+                    <h3>Duration:</h3>
+                    <p>Full Academic Year (April to March)</p>
+                    <h3>Eligibility:</h3>
+                    <p>Students from Class 1 to 12</p>
+                    <button class="btn-enquire-modal" onclick="scrollToEnquiry()">Enquire Now</button>
+                `;
+            } else if (course === 'online') {
+                modalBody.innerHTML = `
+                    <h2>Online Classes</h2>
+                    <p>Learn from anywhere, anytime with our live interactive online classes for students from Class 1 to 12 and Droppers.</p>
+                    <h3>Key Features:</h3>
+                    <ul>
+                        <li>Live interactive sessions with expert faculty</li>
+                        <li>Recorded lectures for revision</li>
+                        <li>Real-time doubt solving during classes</li>
+                        <li>Digital study materials and resources</li>
+                        <li>Flexible learning schedule</li>
+                    </ul>
+                    <h3>Duration:</h3>
+                    <p>Full Academic Year or customized packages</p>
+                    <h3>Eligibility:</h3>
+                    <p>Students from Class 1 to 12 and Droppers</p>
+                `;
+            }
+            courseModal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        courseSpan.onclick = function() {
+            courseModal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == courseModal) {
+                courseModal.style.display = "none";
+            }
+        }
+
+        // Function to scroll to enquiry form
+        function scrollToEnquiry() {
+            document.getElementById('enquiry').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
+
